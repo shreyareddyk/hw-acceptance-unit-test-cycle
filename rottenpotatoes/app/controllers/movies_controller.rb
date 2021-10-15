@@ -75,9 +75,11 @@ class MoviesController < ApplicationController
       redirect_to movies_path
     else
       @movies = @movie.same_directors
+      
       # @movies = Movie.same_directors(@director)
     end
   end
+  
   
 end
   
